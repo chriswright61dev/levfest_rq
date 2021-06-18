@@ -6,7 +6,46 @@ export async function fetchFestivalData() {
   if (!response.ok) {
     throw new Error("Network response was not ok");
   }
-
   return response.json();
-  // single item in array
+}
+
+export async function fetchEventListData() {
+  //eventsData
+  const response = await fetch(
+    "https://www.levenshulmecommunityfestival.co.uk/api_levfest_events_list/"
+  );
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+}
+
+export async function fetchNewsListData() {
+  //eventsData
+  const response = await fetch(
+    "https://www.levenshulmecommunityfestival.co.uk/api_levfest_news_list/"
+  );
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+}
+
+export async function fetchVenuesListData() {
+  //eventsData
+  const response = await fetch(
+    "https://www.levenshulmecommunityfestival.co.uk/api_levfest_venues_list/"
+  );
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+}
+
+export async function fetchData(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
 }
