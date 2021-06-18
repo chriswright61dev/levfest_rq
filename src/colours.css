@@ -1,0 +1,14 @@
+:root {
+  --bg_overlay_color: rgba(42, 38, 61, 0.3);
+  --old_event_bg: rgba(126, 42, 42, 0.8);
+  --old_event_text: rgba(243, 255, 134, 0.8);
+  --old_event_bg_overlay: rgba(48, 48, 48, 0.8);
+  --old_event_dehighlight: rgb(170, 170, 170);
+  --text_dark_color: rgb(15, 15, 15);
+  --text_light_color: rgb(245, 245, 245);
+  --bg_light_color: rgb(115, 190, 220);
+  --bg_dark_color: rgb(55, 55, 50);
+
+  --price_color: rgb(145, 20, 19);
+  --alert_color: rgb(195, 0, 0);
+}
