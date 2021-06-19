@@ -33,7 +33,7 @@ function App() {
     data: festivalData,
     isLoading: isLoadingFD,
     error: errorFD,
-  } = useQuery("BasicFestivalData", fetchFestivalData);
+  } = useQuery("FestivalData", fetchFestivalData);
 
   const {
     data: eventListData,
@@ -51,7 +51,7 @@ function App() {
     data: venueListData,
     isLoading: isLoadingVenuesList,
     error: errorVenuesList,
-  } = useQuery("enuesListData", fetchVenuesListData);
+  } = useQuery("VenuesListData", fetchVenuesListData);
 
   if (isLoadingFD) {
     return <Loader />;
@@ -84,7 +84,7 @@ function App() {
     // console.log("loading");
   }
   if (errorVenuesList) {
-    console.log("Oh no, something went wrong with the News");
+    console.log("Oh no, something went wrong with the Venues");
   }
 
   const eventHighlights = eventListData.filter(

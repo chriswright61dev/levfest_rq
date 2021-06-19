@@ -6,6 +6,7 @@ export async function fetchFestivalData() {
   if (!response.ok) {
     throw new Error("Network response was not ok");
   }
+  // console.log("festival response", response);
   return response.json();
 }
 
