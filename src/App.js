@@ -6,6 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import "./App.css";
+import "./colours.css";
 import Loader from "./components/Loader/Loader";
 // ui
 import Header from "./components/Header/Header";

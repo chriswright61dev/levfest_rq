@@ -1,5 +1,6 @@
 import EventCard from "../../../components/card/EventCard/EventCard";
 import { hasDatePassed } from "../../../utilities/utilities";
+import "./EventsList.css";
 
 function EventsList({ eventListData }) {
   return (

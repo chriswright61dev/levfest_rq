@@ -1,0 +1,114 @@
+/* media queries */
+/* mobile first small*/
+/* main page content container */
+
+#marker {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  height: 10px;
+  background: blue;
+  z-index: 99;
+  /* visibility: hidden; */
+}
+/* 
+.front_page {
+  background: red;
+} */
+
+.front_page__cards {
+  /* the wrapper for All the cards */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.animatestart {
+  /* background-color: blue; */
+  position: relative;
+  left: -100vw;
+}
+
+.triggered {
+  /* background-color: red; */
+  /* width: 100vw; */
+  transform: translateX(100vw);
+  /* transform: translateX(0vw); */
+  transition-property: transform;
+  /* transition-duration: 0.3s; */
+  transition-duration: 0.4s;
+  /* transition-delay: 0.2s; */
+  transition-delay: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.untriggered {
+  /* background-color: rgb(226, 198, 41); */
+  padding-right: 1600px;
+  /* width: 100vw; */
+  transform: translateX(0vw);
+  transition-property: transform;
+  /* transition-duration: 0.3s; */
+  transition-duration: 1s;
+  /* transition-delay: 0.2s; */
+  transition-delay: 1s;
+  transition-timing-function: ease-out;
+}
+
+.card_wrapper {
+  /* wrapper for Each card */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .front_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .front_page__cards {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card_wrapper {
+    flex-direction: row;
+    display: flex;
+    /* border: 1px solid; */
+    margin-bottom: 4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* .front_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  } */
+
+  .front_page__cards {
+    /* the wrapper for all the cards */
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card_wrapper {
+    /* individual wrapper for a card and data boxes*/
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 4rem;
+  }
+}

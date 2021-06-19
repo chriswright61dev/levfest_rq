@@ -1,3 +1,4 @@
+import "./FrontPage.css";
 import svglogo from "../../images/levfestlogo.svg";
 import herobg from "../../images/hero1.jpg";
 
@@ -22,7 +23,7 @@ function FrontPage({
       <div className="front_page__cards">
         {/* card wrapper */}
 
-        <div id="itemOne">
+        <div id="itemOne" className="card_wrapper">
           <FrontPageBigCard
             title="Whats On This Year"
             text="What is On This Year then"
@@ -34,7 +35,7 @@ function FrontPage({
           />
           <FrontPageEventDataCard event_highlights={event_highlights} />
         </div>
-        <div id="itemTwo">
+        <div id="itemTwo" className="card_wrapper">
           <FrontPageBigCard
             title="What's Happening"
             text=" What's going on now"
@@ -46,7 +47,7 @@ function FrontPage({
           />
           <FrontPageNewsDataCard latestNews={latestNews} />
         </div>
-        <div id="itemThree">
+        <div id="itemThree" className="card_wrapper">
           <FrontPageBigCard
             title="Where is it happening"
             text=" What's On Where"
