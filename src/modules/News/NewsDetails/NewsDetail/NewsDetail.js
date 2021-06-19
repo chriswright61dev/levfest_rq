@@ -1,9 +1,9 @@
 import React from "react";
 import ImageContainer from "../../../../components/image/ImageContainer/ImageContainer";
 import "./NewsDetail.css";
-function NewsDetail(props) {
-  const ns = props.data;
-  console.log("ns", ns);
+function NewsDetail({ data }) {
+  const ns = data;
+
   if (ns) {
     return (
       <div className="news_detail">

@@ -136,7 +136,7 @@ function App() {
           <Venues venueListData={venueListData} />
         </Route>
         <Route path="/venues/:id" exact>
-          <Venue />
+          <Venue eventListData={eventListData} />
         </Route>
         <Redirect to="/" />
         {/* redirect invalid paths */}

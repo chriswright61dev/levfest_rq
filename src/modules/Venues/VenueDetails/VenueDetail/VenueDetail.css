@@ -1,0 +1,78 @@
+/* media queries */
+/* mobile first small*/
+/* main page content container */
+.venue {
+  display: block;
+  margin: 1rem;
+}
+
+address {
+  margin: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.venue_small_image {
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+}
+
+.venue_small_image img {
+  border-radius: 50%;
+}
+
+.venue_text {
+  width: 100%;
+  /* background: rgb(186, 179, 223); */
+}
+.venue_name {
+  width: 100%;
+  /* background: rgb(180, 172, 252); */
+}
+
+.venue_events {
+  width: 100%;
+}
+
+.venue_images {
+  width: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .venue {
+    display: flex;
+  }
+
+  .venue_text {
+    width: 20%;
+  }
+  /* .venue_name {
+
+  } */
+
+  .venue_events {
+    /* background-color: red; */
+    width: 50%;
+    /* flex: 1; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .venue_images {
+    width: 30%;
+  }
+}
