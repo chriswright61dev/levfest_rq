@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import EventDetail from "./EventDetail/EventDetail.js";
 import Loader from "../../../components/Loader/Loader";
 
-function EventDetails(props) {
+function EventDetails() {
   let { id } = useParams();
 
   const {
