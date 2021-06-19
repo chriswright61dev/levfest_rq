@@ -10,6 +10,7 @@ address {
   margin: 1rem;
   font-weight: 600;
   font-style: normal;
+  line-height: 0.7rem;
 }
 
 .venue_small_image {
@@ -34,6 +35,9 @@ address {
 
 .venue_events {
   width: 100%;
+}
+.venue_events h4 {
+  text-align: center;
 }
 
 .venue_images {

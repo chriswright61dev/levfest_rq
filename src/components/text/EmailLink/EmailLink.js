@@ -4,9 +4,9 @@ function EmailLink(props) {
   const link = "mailto:" + props.source;
   const linkText = props.linkText;
   return (
-    <div className="email_link">
+    <p className="email_link">
       <a href={link}>Email: {linkText}</a>
-    </div>
+    </p>
   );
 }
 

@@ -9,11 +9,12 @@ export async function fetchFestivalData() {
   // console.log("festival response", response);
   return response.json();
 }
-
+const thisyear = new Date().getFullYear();
 export async function fetchEventListData() {
   //eventsData
   const response = await fetch(
-    "https://www.levenshulmecommunityfestival.co.uk/api_levfest_events_list/"
+    "https://www.levenshulmecommunityfestival.co.uk/api_levfest_events_list/" +
+      thisyear
   );
   if (!response.ok) {
     throw new Error("Network response was not ok");

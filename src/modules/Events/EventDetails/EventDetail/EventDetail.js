@@ -4,7 +4,7 @@ import DateTime from "../../../../components/text/DateTime/DateTime";
 // import TimeText from "../../../../components/TimeText/TimeText";
 // import ShowYear from "../../../../components/ShowYear/ShowYear";
 import VenueLink from "../../../../components/text/VenueLink/VenueLink";
-// import OldEvent from "../../../../components/OldEvent/OldEvent";
+import OldEvent from "../../../../components/OldEvent/OldEvent";
 import ImageContainer from "../../../../components/image/ImageContainer/ImageContainer";
 function EventDetail(props) {
   const es = props.data;
@@ -19,7 +19,7 @@ function EventDetail(props) {
             <p className="admission">Admission: {es.event_admission} </p>
           ) : null}
           {/* is it an old event? if so make it very clear  */}
-          {/* {props.old ? <OldEvent date={es.event_date_time} /> : null} */}
+          {props.old ? <OldEvent date={es.event_date_time} /> : null}
           <p>{es.event_introduction}</p>
           {/* <TimeText timeText={es.event_time_text} /> */}
           {/* time from text field not date */}

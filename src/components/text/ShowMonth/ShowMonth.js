@@ -1,5 +1,5 @@
 import React from "react";
-import { DateFormat } from "../../utilities/utilities";
+import { DateFormat } from "../../../utilities/utilities";
 function ShowMonth(props) {
   if (props.date) {
     const formattedDate = DateFormat(props.date);

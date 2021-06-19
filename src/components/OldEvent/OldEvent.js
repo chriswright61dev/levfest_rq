@@ -1,7 +1,7 @@
 import React from "react";
 import "./OldEvent.css";
-import ShowYear from "../ShowYear/ShowYear";
-import ShowMonth from "../ShowMonth/ShowMonth";
+import ShowYear from "../text/ShowYear/ShowYear";
+import ShowMonth from "../text/ShowMonth/ShowMonth";
 function OldEvent(props) {
   return (
     <div className="old_event">

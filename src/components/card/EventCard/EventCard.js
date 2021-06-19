@@ -14,8 +14,8 @@ function EventCard(props) {
           }
         >
           <h2> {props.title}</h2>
-          <p>at {props.venue}</p>
-        </div>{" "}
+          {props.venue ? <p>at {props.venue}</p> : null}
+        </div>
       </Link>
       <div className="event_card__text_middle">
         {props.old ? (

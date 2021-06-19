@@ -8,8 +8,6 @@ import "./VenueDetail.css";
 
 function VenueDetail({ data, venueEvents }) {
   const vs = data;
-  console.log(data);
-  console.log(venueEvents); // could be none
   if (vs) {
     return (
       <div className="venue">
@@ -28,7 +26,7 @@ function VenueDetail({ data, venueEvents }) {
             {vs.venue_address_2 ? <p>{vs.venue_address_2}</p> : null}
             {vs.venue_address_3 ? <p>{vs.venue_address_3}</p> : null}
             {vs.venue_address_4 ? <p>{vs.venue_address_4}</p> : null}
-            <hr />
+            <p></p>
             {vs.venue_telephone ? <p>{vs.venue_telephone}</p> : null}
 
             {vs.venue_website ? (
