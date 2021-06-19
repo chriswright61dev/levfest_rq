@@ -1,11 +1,11 @@
-// import EventsList from "../modules/Events/EventsList/EventsList";
+import EventsList from "../modules/Events/EventsList/EventsList";
 import Pagetop from "../components/utility/PageTop/Pagetop";
-function Events() {
+function Events({ eventListData }) {
   return (
     <div className="content">
       <Pagetop />
       <h1 className="page_h1">Levenshulme Festival Events </h1>
-      {/* <EventsList /> */}
+      <EventsList eventListData={eventListData} />
     </div>
   );
 }

@@ -1,8 +1,7 @@
-// import React from "react";
 import { Link } from "react-router-dom";
-import ImageContainer from "../../ImageContainer/ImageContainer";
+import ImageContainer from "../../image/ImageContainer/ImageContainer";
 import "./EventCard.css";
-import DateTime from "../../DateTime/DateTime";
+import DateTime from "../../text/DateTime/DateTime";
 function EventCard(props) {
   return (
     <div className="event_card">

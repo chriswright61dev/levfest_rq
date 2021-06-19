@@ -118,7 +118,7 @@ function App() {
           />
         </Route>
         <Route path="/events" exact>
-          <Events />
+          <Events eventListData={eventListData} />
         </Route>
         <Route path="/events/:id">
           <Event />
@@ -127,13 +127,13 @@ function App() {
           <EventsOld />
         </Route>
         <Route path="/news" exact>
-          <News />
+          <News newsListData={newsListData} />
         </Route>
         <Route path="/news/:id">
           <NewsItem />
         </Route>
         <Route path="/venues" exact>
-          <Venues />
+          <Venues venueListData={venueListData} />
         </Route>
         <Route path="/venues/:id" exact>
           <Venue />
