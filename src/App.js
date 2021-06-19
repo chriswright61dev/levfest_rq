@@ -23,7 +23,7 @@ import NewsItem from "./pages/NewsItem";
 //queries
 // basic data
 import { fetchFestivalData } from "./utilities/fetchData/FetchData";
-import { fetchEventListData } from "./utilities/fetchData/FetchData";
+// import { fetchEventListData } from "./utilities/fetchData/FetchData";
 import { fetchNewsListData } from "./utilities/fetchData/FetchData";
 import { fetchVenuesListData } from "./utilities/fetchData/FetchData";
 // const { data } = useQuery("SomeEventsListData", fetchEventListData);
@@ -36,11 +36,28 @@ function App() {
     error: errorFD,
   } = useQuery("FestivalData", fetchFestivalData);
 
+  const year = new Date().getFullYear(); // this year
   const {
     data: eventListData,
     isLoading: isLoadingEventsList,
     error: errorEventsList,
-  } = useQuery("EventListData", fetchEventListData);
+  } = useQuery(["EventListData", year], async () => {
+    const baseUrl = "https://www.levenshulmecommunityfestival.co.uk/";
+    const apiUrl = "api_levfest_events_list/";
+    const url = baseUrl + apiUrl + year;
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  });
+
+  // const {
+  //   data: eventListData,
+  //   isLoading: isLoadingEventsList,
+  //   error: errorEventsList,
+  // } = useQuery("EventListData", fetchEventListData);
 
   const {
     data: newsListData,

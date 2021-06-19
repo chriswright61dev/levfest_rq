@@ -34,11 +34,16 @@
 .event_card__text_top h2 {
   font-weight: 900;
   margin: 1rem;
+  display: inline-block;
+  max-height: 4.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* max-width: 13ch; */
 }
-.event_card__text_top p {
+/* .event_card__text_top p {
   font-weight: 400;
   margin: 1rem;
-}
+} */
 
 .event_old h2 {
   color: var(--old_event_dehighlight);
@@ -54,9 +59,13 @@
 
 .event_card__text_middle h4 {
   font-weight: 900;
-  margin: 1rem;
+  margin: 0.5rem;
 }
-
+.event_card__text_middle p {
+  font-weight: 400;
+  margin: 0 1rem 0 1rem;
+  /* margin-left: 1rem; */
+}
 .event_card__text_bottom {
   bottom: 0;
   pointer-events: none;

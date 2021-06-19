@@ -14,10 +14,10 @@ function EventCard(props) {
           }
         >
           <h2> {props.title}</h2>
-          {props.venue ? <p>at {props.venue}</p> : null}
         </div>
       </Link>
       <div className="event_card__text_middle">
+        {props.venue ? <p>at {props.venue}</p> : null}
         {props.old ? (
           <p className="an_old_event">This is an OLD event</p>
         ) : (

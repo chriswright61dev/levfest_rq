@@ -23,9 +23,13 @@
 }
 
 .venue_card__text_top h2 {
+  display: inline-block;
   font-weight: 900;
   margin: 1rem;
+  max-height: 4.5rem;
+  overflow: hidden;
   pointer-events: none;
+  text-overflow: ellipsis;
 }
 
 .venue_card__text_bottom {

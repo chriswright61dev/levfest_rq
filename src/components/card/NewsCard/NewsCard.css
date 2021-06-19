@@ -25,6 +25,10 @@
 .news_card__text_top h2 {
   font-weight: 900;
   margin: 1rem;
+  display: inline-block;
+  max-height: 4.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news_card__text_bottom {
